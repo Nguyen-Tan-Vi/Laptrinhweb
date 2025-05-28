@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profile-Chỉnh sửa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <<h2>Chỉnh sửa thông tin</h2>
+        <form method="post">
+            Họ tên: <input name="fullname" value="{{ user[4] }}"><br>
+            Email: <input name="email" value="{{ user[3] }}"><br>
+            SĐT: <input name="phone" value="{{ user[5] }}"><br>
+            Ảnh đại diện (URL): <input name="avatar_url" value="{{ user[6] }}"><br>
+            Giới thiệu: <textarea name="bio">{{ user[7] }}</textarea><br>
+            <button>Lưu</button>
+        </form>
+        <a href="/profile">Quay lại</a>
+    </div>
+</body>
+</html>

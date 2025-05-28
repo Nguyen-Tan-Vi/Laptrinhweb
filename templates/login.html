@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng nhập</h2>
+        <form method="post">
+            Username: <input name="username"><br>
+            Password: <input type="password" name="password"><br>
+            <button>Đăng nhập</button>
+        </form>
+        <a href="/register">Chưa có tài khoản? Đăng ký</a>
+    </div>
+</body>
+</html>

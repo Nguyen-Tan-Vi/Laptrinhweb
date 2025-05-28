@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Thông tin cá nhân</h2>
+        <img src="{{ user[6] }}" width="100"><br>
+        Họ tên: {{ user[4] }}<br>
+        Email: {{ user[3] }}<br>
+        SĐT: {{ user[5] }}<br>
+        Giới thiệu: {{ user[7] }}<br>
+        <a href="/edit">Chỉnh sửa</a> | <a href="/logout">Đăng xuất</a>
+    </div>
+</body>
+</html>
